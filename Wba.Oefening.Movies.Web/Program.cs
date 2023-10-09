@@ -22,8 +22,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
    name: "MovieInfo",
-   pattern: "Movies/{id:long?}",
-   defaults: new { Controller = "Home", Action = "ShowMovieInfo" });
+   pattern: "Movies/{id:long}",
+   defaults: new { Controller = "Movies", Action = "ShowMovie" });
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -3,7 +3,7 @@
     public class MoviesShowMovieViewModel : BaseViewModel
     {
         public BaseViewModel Genre { get; set; }
-        public IEnumerable<BaseViewModel> Actors { get; set; }
-        public IEnumerable<BaseViewModel> Directors { get; set; }
+        public IEnumerable<BasePersonViewModel> Actors { get; set; }
+        public IEnumerable<BasePersonViewModel> Directors { get; set; }
     }
 }
