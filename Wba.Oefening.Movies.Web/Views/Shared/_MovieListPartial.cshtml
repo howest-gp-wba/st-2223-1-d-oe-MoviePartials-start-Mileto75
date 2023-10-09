@@ -1,0 +1,18 @@
+﻿@model IEnumerable<BaseViewModel>
+@foreach (var movie in Model)
+{
+    <div class="col col-lg-3 m-4 text-center">
+        <a asp-controller="Movies"
+           asp-action="ShowMovie"
+           asp-route-MovieId="@movie.Id">
+            <div class="card" style="width: 18rem;">
+                <!--tips: add .text-center,.text-right to the .card to change card text alignment-->
+                <img src="~/images/@movie.Image" class="card-img-top" alt="@movie.Title">
+                <div class="card-body">
+                    <h5 class="card-title">@movie.Title</h5>
+                </div>
+            </div>
+        </a>
+    </div>
+}
+
