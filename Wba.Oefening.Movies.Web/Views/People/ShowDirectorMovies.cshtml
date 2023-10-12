@@ -1,0 +1,9 @@
+﻿@model PeopleShowDirectorMoviesViewModel
+<div class="row">
+    <partial name="_MovieListPartial" model="@Model.Movies" />
+</div>
+<div class="row">
+    <a asp-controller="People"
+       asp-action="ShowDirectors"
+       class="btn btn-info">Back</a>
+</div>

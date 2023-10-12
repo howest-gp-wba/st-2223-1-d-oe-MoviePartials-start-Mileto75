@@ -27,8 +27,7 @@
                 }
             </div>
             <div class="card-footer text-center">
-                <a asp-controller="Movies"
-                   asp-action="Index" class="btn btn-primary">Back</a>
+                <a href="@Context.Request.Headers.Referer" class="btn btn-primary">Back</a>
             </div>
         </div>
     </div>
